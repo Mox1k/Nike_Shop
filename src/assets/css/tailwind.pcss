@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+    .text-blur{
+        text-shadow: 0px 0px 16px rgba(203,105,193,0.81);
+    }
+}
 
-"files.associations": {
-    "*.css": "css",
-    "*.pcss": "postcss",
-} 
+
+
+
+@layer components{
+    body {
+        @apply bg-black text-white;
+    }
+
+    .site-block{
+        @apply flex flex-col mx-auto h-screen;
+    }
+}
